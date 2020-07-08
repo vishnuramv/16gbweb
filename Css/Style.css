@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color1: #000;
+    --color2: #fff;
+    --color3: rgba(255, 255, 255, 0.527);
+
+
+}
+
+body {
+    background-color: var(--color1);
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+
+}
+
+.logo{
+    margin-left: 5%;
+    flex: 2;
+    color: var(--color2);
+    font-family: 'Ribeye Marrow', cursive;
+    font-size: 32px;
+
+}
+
+.nav-links{
+    margin-right: 5%;
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.nav-links li :hover{
+    /* text-decoration: underline blue; */
+    border: blue;
+    /* width: 100px; */
+}
+
+@media screen and (max-width: 768px) {
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+
+    .nav-links {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 0.5s ease-out;
+        pointer-events: none;
+    }
+    
+    .nav-links.open {
+        background: var(--color2);
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(2160px at 90% -10%);
+        pointer-events: all;
+    }
+    .line.open{
+        background-color: var(--color1);
+    }
+
+    .nav-links li a {
+        font-size: 25px;
+        color: var(--color1);
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.1s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.3s;
+    }
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.5s;
+    }
+    .nav-links li:nth-child(6) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+}
