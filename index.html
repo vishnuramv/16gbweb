@@ -5,31 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>16GbWeb</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./Css/Style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Ribeye+Marrow&family=Raleway&family=Ribeye&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Ribeye+Marrow&family=Raleway&family=Ribeye&display=swap"
         rel="stylesheet">
     <link rel="icon" href="./Img/16.png" type="image/x-icon">
 </head>
 
 <body>
+    <section class="preloader">
+        <div class="dup">
+            <div class='body'> <span>
 
-    <section class="landing" id="home">
-        <nav>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+                    <span></span>
+
+                    <span></span> <span></span> <span></span> </span>
+                <div class='base'> <span></span>
+                    <div class='face'></div>
+                </div>
             </div>
-            <div class="logo">16GW</div>
-            <ul class="nav-links">
-                <li><a class="active nav-item" href="./index.html#home">Home</a></li>
-                <li><a class="nav-item" href="./index.html#about">About</a></li>
-                <li><a class="nav-item" href="./index.html#service">Services</a></li>
-                <li><a class="nav-item" href="./index.html#portfolio">Portfolio</a></li>
-                <li><a class="nav-item" href="./index.html#team">Team</a></li>
-                <li><a class="nav-item" href="./index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <div class='longfazers'> <span></span> <span></span> <span></span> <span></span> </div>
+            <!-- <h1>Secret Launching</h1> -->
+            <!-- <h1 class="secondary">16 Gb Web Technologies</h1> -->
+
+        </div>
+    </section>
+
+    <nav class="sticky-top" id="navbar">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="logo">16GW</div>
+        <div>
+        <ul class="nav-linkss">
+            <li class="nav-item"><a class="active nav-link" href="./index.html#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./index.html#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="./index.html#service">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="./index.html#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="./index.html#team">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="./index.html#contact">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    <section class="landing" id="home">
 
         <div class="land-content">
             <div class="intro-text">
@@ -42,10 +63,37 @@
         </div>
     </section>
 
+    <section id="about" class="heig"></section>
+    <section id="service" class="heig"></section>
+
+    <section id="portfolio" class="heig"></section>
+
+    <section id="team" class="heig"></section>
+
+
+
+
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.8761183737815!2d80.19896931453657!3d13.17020999072582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDEwJzEyLjgiTiA4MMKwMTInMDQuMiJF!5e0!3m2!1sen!2sin!4v1594291819809!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+
+
+
+
+
     <script src="./Js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <script>
-        
+        jQuery(window).load(function () {
+            jQuery(".preloader").fadeOut(500);
+        });
+        </script>
+    <script>
+        $(' .nav-link').click(function(){
+        $(' .nav-link').removeClass('active');
+        $(this).addClass('active');
+    })
     </script>
+
 </body>
 
 </html>
