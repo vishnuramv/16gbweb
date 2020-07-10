@@ -15,6 +15,6 @@ hamburger.addEventListener("click", () => {
 });
 
 window.onscroll = () => {
-  const nav = document.querySelector('#navbar');
-  if(this.scrollY <= 600) nav.className = ''; else nav.className = 'scroll';
+  const nav = document.querySelector('#navss');
+  if(this.scrollY <= 100) nav.className = ''; else nav.className = 'scroll';
 };
