@@ -500,10 +500,115 @@ nav.scroll {
     font-family:  'Roboto', sans-serif;
 }
 
+/* Whyus */
+
+#whyus{
+    background-color: var(--color8);
+}
+
+
+
+
 /* Service */
 
+
+#services{
+    /* background-image: url(../extraz/mountains_forest_landscape_146126_3840x2160.jpg);
+    background-size: cover;
+    background-position: center; */
+    color: #efefef;
+    /* background-attachment: fixed;
+    padding-top:50px ;
+    padding-bottom: 50px; */
+}
+#services h1{
+    text-align: center;
+    padding-bottom: 10px;
+    color: #efefef !important;
+}
+
+/* #services h1::after{
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 130px;
+    margin: 10px auto 5px;
+} */
+.services{
+    margin-top: 40px;
+}
+
+.icon{
+    font-size: 45px;
+    padding: 8px;
+    height: 60px;
+    width: 60px;
+    margin: 20px auto;
+    /* border: 1px solid #fff;
+    border-radius: 50%; */
+}
+.services{
+    font-family: var(--font2);
+}
+#services p{
+    font-size: 15px;
+    margin-top: 17px;
+    color: #cccccc;
+}
+
+.services .col-md-4{
+    margin: 0px auto;
+}
+
+.services .col-md-4:hover{
+    background:var(--color7);
+    color: var(--color2);
+    opacity: 0.7;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+
+
+.modal-head{
+    color: var(--color7);
+}
+
+
+.modal-text{
+    color: var(--color7) !important;
+}
+
+.modal-content{
+    background-color: var(--color1);
+    border: 1px solid white;
+}
+
+.modal button{
+    color: var(--color7);
+    outline: none;
+    border: none;
+    font-size: 30px;
+}
+
+.modal button:hover{
+    color: var(--color2);
+}
+
+.close{
+    opacity: 1;
+    text-shadow: none;
+}
+
+
+
+
+
+
+/* 
 #service{
-    background-color: var(--color8);
+    background-color: var(--color1);
 }
 .service-head {
     font-family: var(--font2);
@@ -515,7 +620,7 @@ nav.scroll {
 
 #portfolio {
     background-color: var(--color8);
-}
+} */
 
 
 
@@ -525,20 +630,21 @@ nav.scroll {
     padding-top: 50px;
     padding-bottom: 50px;
     color: #555555;
+    background-color: var(--color8);
 }
 #team h1{
     text-align: center;
     color: var(--color7) !important;
     padding-bottom: 10px;
 }
-h1::after{
+/* h1::after{
     content: '';
     background: #fff;
     display: block;
     width: 170px;
     height: 3px;
     margin: 10px auto 5px;
-}
+} */
 .profile-pic{
     margin-top: 20px;
 }
