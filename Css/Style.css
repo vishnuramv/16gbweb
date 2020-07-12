@@ -530,6 +530,7 @@ nav.scroll {
 
 
 
+
 /* Service */
 
 
@@ -823,7 +824,7 @@ blockquote::after{
 /* Contact */
 
 #contact{
-    background-color: var(--color8);
+    background-color: var(--color1);
 }
 
 .maps{
@@ -930,6 +931,16 @@ footer {
     .about-content{
         padding-left: 0px !important;
     }
+
+    .whyussep{
+        flex-direction: column;
+    }
+
+    .speciality{
+        width: 50% !important;
+        margin-bottom: 10px;
+    }
+    
 }
 
 @media screen and (min-width: 2550px) {
@@ -1087,5 +1098,20 @@ footer {
 
     .service-head {
         font-size: 2rem;
+    }
+
+    .abt{
+        padding-bottom: 0px !important;
+        margin-bottom: 0px;
+    }
+
+    .about-content{
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .speciality{
+        width: 100% !important;
+        /* margin-bottom: 10px; */
     }
 }

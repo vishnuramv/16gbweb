@@ -14,6 +14,17 @@ hamburger.addEventListener("click", () => {
   });
 });
 
+links.forEach((link) => {
+  link.addEventListener("click", ()=>{
+    navLinks.classList.toggle("open")
+    lines[1].classList.toggle("open");
+    body.classList.remove("open");
+
+  })
+});
+
+
+
 window.onscroll = () => {
   const nav = document.querySelector('#navss');
   if(this.scrollY <= 100) nav.className = ''; else nav.className = 'scroll';
