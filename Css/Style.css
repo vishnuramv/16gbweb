@@ -838,6 +838,11 @@ blockquote::after{
     color: var(--color7);
 }
 
+.Phone-icon{
+    color: var(--color7);
+    font-size: 20px;
+}
+
 
 
 
@@ -1113,5 +1118,8 @@ footer {
     .speciality{
         width: 100% !important;
         /* margin-bottom: 10px; */
+    }
+    .contact-flex{
+        flex-direction: column;
     }
 }
