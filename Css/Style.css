@@ -1114,6 +1114,9 @@ footer {
         margin-top: 20px;
         margin-bottom: 0px;
     }
+    .abt-img{
+        width: 100% !important;
+    }
 
     .speciality{
         width: 100% !important;
