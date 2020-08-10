@@ -39,13 +39,13 @@ nav {
     height: 10vh;
     position: sticky;
     top: -1px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.56);
-    z-index: 100;
 }
 
 nav.scroll {
     background-color: var(--color1);
-    height: 8vh;
+    height: 9vh;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.56);
+    z-index: 100;
 }
 
 .logo {
@@ -913,8 +913,16 @@ footer {
     background-color: #0177B5;
 }
 
-.btn-gog{
-    background-color: #DE5449;
+.btn-insta{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
+}
+
+.btn-fb{
+    background-color: #0B86EE;
+}
+
+.follow-icon{
+    width: 220px;
 }
 
 
@@ -1152,5 +1160,14 @@ footer {
     }
     .contact-flex{
         flex-direction: column;
+    }
+
+    
+    .follow-sec{
+        flex-direction: column;
+    }
+
+    .follow-sec .follow-icon{
+        padding: 10px 0px;
     }
 }
